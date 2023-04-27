@@ -5,6 +5,10 @@ import { NoSsr } from "@/components/no-ssr";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const config = {
+  runtime: "edge",
+};
+
 export const getServerSideProps = async () => {
   return {
     props: {
